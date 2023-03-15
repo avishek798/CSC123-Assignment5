@@ -1,0 +1,12 @@
+Dictionaries, also called maps in Java, are a powerful data structure that consists of key-value pairs. Each value is mapped to a unique key, which serves as a reference to that value. The keys are unique because they are stored in a “Set”, which don't allow duplicate values. When I was building my banking application, I realized that searching for accounts would be much easier if the account number served as a reference to the account object. However, at the time, I didn't know about Maps and used an ArrayList instead. This required the findAccount method to go through the entire ArrayList each time, which would be inefficient for a large number of accounts. Maps are much more effective because values can be looked up quickly.
+
+Maps have two parameters: the type of the keys and the type of the values. They can't hold primitive types, only Java classes. For example, instead of using "int", we need to use "Integer", which is the full wrapper class. There are three main classes that implement the map interface: HashMap, LinkedHashMap, and TreeMap. HashMaps store and look up keys and values, but the keys are not in any particular order. LinkedHashMaps store keys in the exact order they were added. The keys in TreeMaps are always sorted. The sorting order follows the natural ordering of keys.
+
+5 Methods And Their Description:
+
+1. containsKey(Object k): This method returns a boolean data type whether the map contains the specific key that we pass as a parameter to the method.
+2. containsValue(Object value): This method returns a boolean data type depending on if the map contains the value that we passed as an argument mapped to one or more keys.
+3. get(Object key): It returns the value stored in the map that is mapped to the key that we pass as the parameter.
+4. keySet(): This method returns the all the keys in the map in a “Set” data structure.
+5. put (K key, V value): This method adds elements to the map. We need to pass two parameters and the value gets associated or mapped to the key. If the key already exists, it’s value gets replaced by the new value.
+
