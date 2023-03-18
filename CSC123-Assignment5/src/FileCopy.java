@@ -32,7 +32,6 @@ public class FileCopy {
 			System.exit(0);
 		}
 
-		System.out.println(dir.exists());
 		dir.mkdirs();
 		targetF.createNewFile();
 
